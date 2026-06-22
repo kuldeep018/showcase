@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AK Developers project showcase by Kuldeep: modern websites, AI apps, business tools, and full stack demos.">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="AK Developers - Project Showcase">
+  <meta property="og:description" content="Launch demos, explore projects, and contact Kuldeep.">
+  <meta property="og:type" content="website">
+  <title>AK Developers | Project Showcase</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="loader" aria-label="Loading"><span></span></div>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="AK Developers home"><span>AK</span> DEVELOPERS</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">D</button>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Portfolio / Full Stack / AI Apps</p>
+        <h1>AK DEVELOPERS</h1>
+        <p class="typing" data-typing="Building Modern Websites, AI Apps & Business Solutions."></p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+          <a class="btn ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="hero-panel glass reveal">
+        <div class="panel-top"><span></span><span></span><span></span></div>
+        <pre><code>const developer = {
+  name: "Kuldeep",
+  stack: ["HTML", "CSS", "JS", "Node"],
+  focus: "Fast business-ready apps"
+};</code></pre>
+      </div>
+    </section>
+
+    <section class="stats section reveal" aria-label="Project statistics">
+      <div><strong data-count="35">0</strong><span>Projects Completed</span></div>
+      <div><strong data-count="13">0</strong><span>Technologies Learned</span></div>
+      <div><strong data-count="28">0</strong><span>GitHub Repositories</span></div>
+      <div><strong data-count="9800">0</strong><span>Website Visitors</span></div>
+    </section>
+
+    <section id="about" class="section split">
+      <div class="profile-card glass reveal">
+        <div class="avatar">K</div>
+        <h2>Kuldeep</h2>
+        <p>Full Stack Developer</p>
+        <a class="btn primary small" href="#contact">Hire / Collaborate</a>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">Building polished digital products from idea to launch.</h2>
+        <p class="section-copy">I create responsive websites, dashboards, automation tools, AI-powered apps, and business solutions with clean code and thoughtful interfaces.</p>
+        <div class="skills" id="skills"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-title">
+      <p class="eyebrow reveal">Featured</p>
+      <h2 id="featured-title" class="section-title reveal">Top projects</h2>
+      <div class="featured-grid" id="featuredProjects"></div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Showcase</p>
+          <h2 id="projects-title" class="section-title">Launch-ready project demos</h2>
+        </div>
+        <label class="search">
+          <span class="sr-only">Search projects</span>
+          <input id="projectSearch" type="search" placeholder="Search by name, tech, category...">
+        </label>
+      </div>
+      <div class="filters reveal" id="filters" aria-label="Project filters"></div>
+      <div class="project-grid" id="projectGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No matching projects found.</p>
+    </section>
+
+    <section class="section split timeline-wrap">
+      <div class="reveal">
+        <p class="eyebrow">Journey</p>
+        <h2 class="section-title">Learning timeline</h2>
+      </div>
+      <ol class="timeline reveal">
+        <li><span>01</span>Started HTML</li>
+        <li><span>02</span>Learned CSS</li>
+        <li><span>03</span>Learned JavaScript</li>
+        <li><span>04</span>Learned Python</li>
+        <li><span>05</span>Started Backend</li>
+        <li><span>06</span>Built Projects</li>
+      </ol>
+    </section>
+
+    <section class="section" aria-labelledby="testimonials-title">
+      <p class="eyebrow reveal">Trust</p>
+      <h2 id="testimonials-title" class="section-title reveal">What people say</h2>
+      <div class="testimonial-grid reveal">
+        <article><p>"Kuldeep delivered a clean, fast business website and made the process simple."</p><strong>Riya Sharma</strong><span>Startup Founder</span></article>
+        <article><p>"The dashboard felt premium, responsive, and easy for our team to use."</p><strong>Aman Verma</strong><span>Operations Lead</span></article>
+        <article><p>"Great communication, strong UI sense, and practical full stack execution."</p><strong>Neha Kapoor</strong><span>Product Manager</span></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title">Let's build your next digital product.</h2>
+      <div class="contact-links">
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:kuldeep@example.com">kuldeep@example.com</a>
+      </div>
+      <button class="btn primary" id="copyEmail" type="button" data-email="kuldeep@example.com">Copy Email</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright <span id="year"></span> AK DEVELOPERS. Made with love using HTML CSS JavaScript.</p>
+  </footer>
+
+  <dialog class="modal" id="projectModal" aria-labelledby="modalTitle">
+    <div class="modal-body">
+      <button class="icon-btn close-modal" type="button" aria-label="Close project details">x</button>
+      <img id="modalImage" alt="" loading="lazy">
+      <div>
+        <p class="eyebrow" id="modalCategory"></p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div class="modal-section"><strong>Features</strong><ul id="modalFeatures"></ul></div>
+        <div class="modal-section"><strong>Technologies</strong><div id="modalTech" class="chips"></div></div>
+        <p><strong>Challenges:</strong> <span id="modalChallenges"></span></p>
+        <p><strong>What I Learned:</strong> <span id="modalLearned"></span></p>
+        <div class="modal-actions">
+          <a class="btn primary" id="modalDemo" target="_blank" rel="noopener">Open Demo</a>
+          <a class="btn secondary" id="modalGithub" target="_blank" rel="noopener">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <button class="to-top" type="button" aria-label="Scroll to top">Top</button>
+</body>
+</html>

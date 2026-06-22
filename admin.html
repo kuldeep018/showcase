@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>AK Developers Admin</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <main class="admin-shell">
+    <section class="login" id="loginPanel">
+      <div class="panel">
+        <p class="eyebrow">Hidden Admin</p>
+        <h1>AK Developers</h1>
+        <p>Manage project cards, thumbnails, links, tags, status, and featured projects.</p>
+        <form id="loginForm">
+          <label>Password
+            <input type="password" id="password" placeholder="Enter admin password" autocomplete="current-password" required>
+          </label>
+          <button type="submit">Unlock Admin</button>
+          <small>Default password: <strong>akdevelopers</strong></small>
+        </form>
+      </div>
+    </section>
+
+    <section class="dashboard" id="dashboard" hidden>
+      <header class="admin-header">
+        <div>
+          <p class="eyebrow">Project CMS</p>
+          <h1>Admin Panel</h1>
+        </div>
+        <div class="header-actions">
+          <a href="index.html">View Site</a>
+          <button type="button" id="logout">Logout</button>
+        </div>
+      </header>
+
+      <section class="editor panel">
+        <h2 id="formTitle">Add New Project</h2>
+        <form id="projectForm">
+          <input type="hidden" id="projectId">
+          <div class="grid">
+            <label>Project Name<input id="title" required></label>
+            <label>Category<input id="category" list="categories" required></label>
+            <label>Demo URL<input id="demo" type="url" required></label>
+            <label>GitHub URL<input id="github" type="url" required></label>
+            <label>Version<input id="version" placeholder="1.0.0" required></label>
+            <label>Status<input id="status" placeholder="Completed" required></label>
+            <label>Completion Date<input id="date" type="date" required></label>
+            <label>Difficulty<input id="difficulty" placeholder="Medium" required></label>
+            <label>Estimated Dev Time<input id="time" placeholder="18 hrs" required></label>
+            <label>Technologies / Tags<input id="technologies" placeholder="HTML, CSS, JavaScript" required></label>
+          </div>
+          <label>Description<textarea id="description" rows="3" required></textarea></label>
+          <div class="grid">
+            <label>Features<textarea id="features" rows="3" placeholder="One feature per line"></textarea></label>
+            <label>Challenges<textarea id="challenges" rows="3"></textarea></label>
+            <label>What I Learned<textarea id="learned" rows="3"></textarea></label>
+            <label>Thumbnail Upload<input id="imageUpload" type="file" accept="image/*"></label>
+          </div>
+          <label class="check"><input id="featured" type="checkbox"> Featured project</label>
+          <div class="form-actions">
+            <button type="submit">Save Project</button>
+            <button type="button" id="resetForm">Clear Form</button>
+            <button type="button" id="seedData">Restore Example Projects</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="list-head">
+          <h2>Projects</h2>
+          <input id="adminSearch" type="search" placeholder="Search projects">
+        </div>
+        <div id="projectList" class="project-list"></div>
+      </section>
+    </section>
+  </main>
+  <datalist id="categories">
+    <option>HTML</option><option>CSS</option><option>JavaScript</option><option>Python</option><option>Node.js</option><option>Firebase</option><option>AI</option><option>Business</option><option>Utilities</option><option>Games</option><option>API</option><option>Tools</option>
+  </datalist>
+</body>
+</html>
